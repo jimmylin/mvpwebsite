@@ -2,7 +2,7 @@
 title: "Maryland Volleyball Program"
 description: "Your premier volleyball club in the DMV"
 url: "https://jimmylin.github.io/mvpwebsite"
-baseurl: "https://jimmylin.github.io/mvpwebsite"
+baseurl: "/mvpwebsite"
 
 # Club info
 club_name: "Maryland Volleyball Program"
