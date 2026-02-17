@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.dates %}
+    <p><strong>Dates:</strong> {{ page.dates }}</p>
+    {% endif %}
+    {% if page.location %}
+    <p><strong>Location:</strong> {{ page.location }}</p>
+    {% endif %}
+    {% if page.cost %}
+    <p><strong>Cost:</strong> {{ page.cost }}</p>
+    {% endif %}
+  </div>
+  
+  <div class="content">
+    {{ content }}
+    
+    {% if page.registration_link %}
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="{{ page.registration_link }}" class="btn">Register Now</a>
+    </div>
+    {% endif %}
+  </div>
+</div>

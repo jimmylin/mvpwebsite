@@ -1,0 +1,38 @@
+# Site settings
+title: "Maryland Volleyball Program"
+description: "Your premier volleyball club in the DMV"
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Club info
+club_name: "Maryland Volleyball Program"
+club_email: "info@yourclub.com"
+club_phone: "(555) 123-4567"
+club_address: "123 Sports Complex Dr, Your City, ST 12345"
+
+# Social media
+facebook_url: "#"
+instagram_url: "#"
+twitter_url: "#"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  teams:
+    output: true
+    permalink: /teams/:name/
+  clinics:
+    output: true
+    permalink: /clinics/:name/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.age_group %}
+    <p><strong>Age Group:</strong> {{ page.age_group }}</p>
+    {% endif %}
+    {% if page.coach %}
+    <p><strong>Coach:</strong> {{ page.coach }}</p>
+    {% endif %}
+  </div>
+  
+  <div class="content">
+    {{ content }}
+    
+    {% if page.practice_schedule %}
+    <h2>Practice Schedule</h2>
+    <p>{{ page.practice_schedule }}</p>
+    {% endif %}
+    
+    {% if page.season %}
+    <h2>Season Information</h2>
+    <p>{{ page.season }}</p>
+    {% endif %}
+  </div>
+</div>

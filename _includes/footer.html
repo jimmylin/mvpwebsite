@@ -1,0 +1,40 @@
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>{{ site.club_name }}</h3>
+      <p>{{ site.description }}</p>
+      <div class="social-links">
+        {% if site.facebook_url %}
+        <a href="{{ site.facebook_url }}" target="_blank">F</a>
+        {% endif %}
+        {% if site.instagram_url %}
+        <a href="{{ site.instagram_url }}" target="_blank">I</a>
+        {% endif %}
+        {% if site.twitter_url %}
+        <a href="{{ site.twitter_url }}" target="_blank">T</a>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+        <li><a href="{{ '/teams/' | relative_url }}">Our Teams</a></li>
+        <li><a href="{{ '/clinics/' | relative_url }}">Clinics & Camps</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <p>{{ site.club_address }}</p>
+      <p>Phone: {{ site.club_phone }}</p>
+      <p>Email: <a href="mailto:{{ site.club_email }}">{{ site.club_email }}</a></p>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.club_name }}. All rights reserved.</p>
+  </div>
+</footer>
